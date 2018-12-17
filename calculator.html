@@ -12,13 +12,13 @@
       <header>
         <nav>
           <div class="logo">
-            <a href="index.html">HOMETUITIONMY.COM</a>
+            <a href="home.html">HOMETUITIONMY.COM</a>
           </div>
           <div class="menu">
             <ul>
               <li><a href="tuition.html">TUTION</a></li>
               <li><a href="tutor.html">TUTOR</a></li>
-              <li><a href="#">CONTACT US</a></li>
+              <li><a href="contct.html">CONTACT US</a></li>
               <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
@@ -26,7 +26,7 @@
         <div id="box">
           <h2>Tuition Calculator!</h2>
           <form>
-            <label>Level:</label><select class="inputCustOne" name="tuitionLevel">
+            <label>Level:</label><select id="inputCustOne" name="tuitionLevel">
               <option value="0">Level</option>
               <option value="35">UPSR</option>
               <option value="40">PT3</option>
@@ -37,25 +37,26 @@
               <option value="70">PRE UNI</option>
             </select>
             <br>
-            <label>Hour for Each Lesson:</label><select class="inputCustTwo" name="hourNeed">
+            <label>Hour for Each Lesson:</label><select id="inputCustTwo" name="hourNeed">
               <option value="0">Hour</option>
               <option value="90">1.5</option>
               <option value="120">2.0</option>
             </select>
             <br>
-            <label>Lessons Per Week:</label><select class="inputCustThree" name="lessonsPW">
+            <label>Lessons Per Week:</label><select id="inputCustThree" name="lessonsPW">
               <option value="0">Lessons</option>
               <option value="1">1</option>
               <option value="2">2</option>
             </select>
             <br>
-            <input type="submit" onclick="calc()" value="Submit">
+            <button type="button" onclick="calc()" name="button">Submit!</button>
           </form>
-          <div class="resultCalc">
+          <div id="resultCalc">
             RM
           </div>
         </div>
       </header>
+      </div>
       <footer>
         <div id="crew">
           <p>Iman - Amira - Afi</p>
@@ -66,22 +67,17 @@
           <a href="https://www.facebook.com/hometutormalaysia.skeducationsolution/" id="fb">f</a>
         </div>
       </footer>
-      </div>
       <script type="text/javascript">
         function calc() {
-          var n1 = document.getElementsByClassName("inputCustOne");
-          var n2 = document.getElementsByClassName("inputCustTwo");
-          var n3 = document.getElementsByClassName("inputCustThree");
+          var n1 = parseInt(document.getElementById("inputCustOne").value);
+          var n2 = parseInt(document.getElementById("inputCustTwo").value);
+          var n3 = parseInt(document.getElementById("inputCustThree").value);
 
-          console.log(n1.value());
-
-          var o1 = n1/60;
-          var o2 = o1*n2;
-          var o3 = o2*n3;
-          var o4 = n3*4;
-
-          document.getElementsByClassName("resultCalc").innerHTML = 'RM ' + Number.parseFloat(o4).toFixed(2);
-          console.log(o4);
+          var o1=(n1/60);
+          var o2=(o1*n2);
+          var o3 =(o2*n3);
+          var o4 = (o3)*4;
+          document.getElementById("resultCalc").innerHTML = 'RM ' + Number.parseFloat(o4).toFixed(2);
         }
       </script>
   </body>
