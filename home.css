@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%
+  width: 100%;
+  height: 100%
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -10,37 +11,20 @@ body {
   position: relative;
 }
 header {
-  width: 100%;
-  height: 100vh;
-  background-image: url("children.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url("children.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .topicPage {
   position: absolute;
-  top: 25%;
-  left: 15%;
+  top: 13%;
+  left: 29%;
   text-align: center;
 }
-.bttnsatu {
-  background-color: #4DC123;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 2px;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  padding: 14px 60px;
-  border-radius: 20px;
-}
-.bttnsatu:hover {
-  background: #000;
-}
+
 .content {
   width: 90%;
   margin: 4em auto;
@@ -67,6 +51,7 @@ header {
 }
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1;
 }
