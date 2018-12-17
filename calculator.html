@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Home Tuition Malaysia </title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles/calculator.css">
+</head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="home.html">HOMETUITIONMY.COM</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="tuition.html">TUTION</a></li>
+              <li><a href="tutor.html">TUTOR</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div id="box">
+          <h2>Tuition Calculator!</h2>
+          <form>
+            <label>Level:</label><select class="inputCustOne" name="tuitionLevel">
+              <option value="0">Level</option>
+              <option value="35">UPSR</option>
+              <option value="40">PT3</option>
+              <option value="50">SPM</option>
+              <option value="60">STPM</option>
+              <option value="60">IGCSE</option>
+              <option value="70">A LEVEL</option>
+              <option value="70">PRE UNI</option>
+            </select>
+            <br>
+            <label>Hour for Each Lesson:</label><select class="inputCustTwo" name="hourNeed">
+              <option value="0">Hour</option>
+              <option value="90">1.5</option>
+              <option value="120">2.0</option>
+            </select>
+            <br>
+            <label>Lessons Per Week:</label><select class="inputCustThree" name="lessonsPW">
+              <option value="0">Lessons</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <br>
+            <input type="submit" onclick="calc()" value="Submit">
+          </form>
+          <div class="resultCalc">
+            RM
+          </div>
+        </div>
+      </header>
+      <footer>
+        <div id="crew">
+          <p>Iman - Amira - Afi</p>
+        </div>
+        <div id="socialint">
+          <a href="#" id="tweet">t</a>
+          <a href="#" id="ig">ig</a>
+          <a href="#" id="fb">f</a>
+        </div>
+      </footer>
+      <script type="text/javascript">
+        function calc() {
+          var n1 = document.getElementsByClassName("inputCustOne");
+          var n2 = document.getElementsByClassName("inputCustTwo");
+          var n3 = document.getElementsByClassName("inputCustThree");
+
+          console.log(n1.value());
+
+          var o1 = n1/60;
+          var o2 = o1*n2;
+          var o3 = o2*n3;
+          var o4 = n3*4;
+
+          document.getElementsByClassName("resultCalc").innerHTML = 'RM ' + Number.parseFloat(o4).toFixed(2);
+          console.log(o4);
+        }
+      </script>
+    </div>
+  </body>
+</html>

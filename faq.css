@@ -1,0 +1,197 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/education.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topicPage {
+  position: absolute;
+  top: 13%;
+  left: 29%;
+  text-align: center;
+}
+.bttnsatu {
+  background-color: #4DC123;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 60px;
+  border-radius: 20px;
+}
+.bttnsatu:hover {
+  background: #000;
+}
+input[type=text], select {
+  font-size: 25px;
+  width: 100%;
+  padding: 14px 60px;
+  margin: 4px 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.content {
+  width: 90%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+.logo {
+  text-decoration: none;
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo a:hover {
+  color: black;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  background: #8d5524;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+nav.black ul {
+  background: #000;
+}
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+nav ul li:hover {
+  font-weight: bold;
+  background-color: #c68642;
+}
+nav ul li a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+.tab {
+  float: left;
+  background-color: #e0ac69;
+  width: 20%;
+  height: 300px;
+}
+.tab button {
+  display: block;
+  background-color: #f1c27d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.tab button:hover {
+  background-color: #ffdbac;
+  color: black;
+}
+.tab button.active {
+  background-color: #ffdbac;
+  color: black;
+}
+.tabcontent {
+  display: none;
+  float: left;
+  padding: 0 12px;
+  width: 70%;
+  height: 300px;
+}
+
+footer {
+  clear: both;
+  bottom: 0;
+  margin: 0 auto;
+  height: 70px;
+  background-color: #8d5524;
+  }
+footer #crew {
+  float: left;
+  width: 50%;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+}
+footer #socialint {
+  width: 50%;
+  float: right;
+}
+footer #socialint a {
+  float: left;
+  line-height: 70px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+footer #socialint a:hover {
+  background-color: #222;
+}
+img {
+  width: 13px;
+  height: 13px;
+}
+#tweet {
+  background-color: rgb(56,161,243);
+  width: 33.3%;
+}
+#ig {
+  background-color: #d62976;
+  width: 33.3%;
+}
+#fb {
+  background-color: #3D5B94;
+  width: 33.3%;
+}
